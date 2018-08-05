@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>K-Means Clustering</title>
+  <link href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='kmeans.css' type='text/css' />
+</head>
+
+<body>
+  <div class='container'>
+    <div class='row col-xs-12'>
+      <h1>K-Means Clustering</h1>
+      <br/>
+    </div>
+    <div class='row'>
+      <div class='col-xs-7'>
+        <div id='chart'></div>
+      </div>
+      <div class='col-xs-5'>
+
+        <div class='row'>
+          <div class='input'>Number of clusters</div>:
+          <input id='num-clusters' type='text' value='3'>
+          <br/>
+          <div class='input'>Number of centers</div>:
+          <input id='num-centers' type='text' value='3'>
+          <br/>
+          <br />
+          <a class='new-points btn btn-danger'>New points</a>
+          <a class='new-centers btn btn-danger'>New centers</a>
+          <a class='step btn btn-primary find'>Find closest center</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  <script src='d3.min.js'></script>
+  <script src='kmeans.js'></script>
+  <script src="./emoji/d3moji.js"></script>
+</body>
+
+</html>
